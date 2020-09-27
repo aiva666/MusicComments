@@ -34,8 +34,8 @@ function getComm() {
 		if (res.status == 200) {
 			// 如果响应参数的more属性为false,退出程序
 			if (!res.data.more) {
-				let n = new Date().getTime();		// 当前时间，减去程序开始执行的时间除以60得出程序执行的秒数
-				console.log(`评论爬取完毕，用时${(n-beginTime)/6000}秒,程序退出！`)
+				let n = new Date().getTime();		// 当前时间，减去程序开始执行的时间除以1000得出程序执行的秒数
+				console.log(`评论爬取完毕，用时${parseInt((n-beginTime)/1000)}秒,程序退出！`)
 				process.exit();
 			}
 			let comms = res.data.comments;
@@ -55,6 +55,7 @@ function getComm() {
 				// 页数大于等于51时设置lastTime等于最后一个评论的time
 				if (page >= 51 && index == limit-1) {
 					lastTime = item.time;
+					console.log('当前页最后一条评论时间：' + new Date(item.time).toLocaleString())
 				}
 			})
 

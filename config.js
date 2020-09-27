@@ -1,4 +1,4 @@
 module.exports = {
-	songId:'xxxxxx',		// 歌曲ID
-	userName:'xxxxxx'		// 用户名
+	songId:'1360785960',		// 歌曲ID
+	userName:'我乐着呢'		// 用户名
 }

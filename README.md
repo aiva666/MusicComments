@@ -1,4 +1,4 @@
-# 使用Node.js来获取网易云音乐某个人的所有评论
+# 使用Node.js来获取网易云音乐某用户在某首歌曲下的评论
 
 本demo使用了另一位大佬的项目 [网易云音乐 NodeJS 版 API](https://binaryify.github.io/NeteaseCloudMusicApi/#/)的接口，里面各种API都很全，本人做这个demo纯粹是练手，希望大家不要拿它做坏事哦！
 
